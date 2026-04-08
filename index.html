@@ -2348,6 +2348,16 @@ footer::before {
 .footer-inner .brand .sep { color: var(--border-bright); }
 .footer-inner .gold { color: var(--gold); font-weight: 700; }
 .footer-inner .divider { color: var(--border-bright); padding: 0 10px; }
+.footer-link {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+  padding-bottom: 1px;
+}
+.footer-link:hover {
+  color: var(--gold-bright);
+  border-bottom-color: var(--gold);
+}
 
 /* selection */
 ::selection { background: var(--gold); color: var(--bg); }
@@ -3183,7 +3193,7 @@ footer::before {
 <footer>
   <div class="footer-inner">
     <div class="brand">
-      <span>POWERED BY <span class="gold">WEBTRIX PRO</span></span>
+      <span>POWERED BY <a href="https://futuresolutionsonline.co.uk/" target="_blank" rel="noopener" class="gold footer-link">FUTURE SOLUTIONS</a></span>
       <span class="divider">·</span>
       <span>ZCG INVESTMENTS DISPOSITION HUB</span>
     </div>
